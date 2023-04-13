@@ -12,12 +12,14 @@ public class BigDecimal {
     @GetMapping("/bigdecimal/{input}")
     public String function(@PathVariable String input){
        // input = "1021345.1";
-       String ans=input+"                    \n";
+       String ans="";
     java.math.BigDecimal bd1 = new java.math.BigDecimal("0");
     try {
       bd1 = new java.math.BigDecimal(input);
     } catch (NumberFormatException e) {
       System.out.println(e);
+      ans+="wrong input plz try again";
+      return ans;
     }
 
     System.out.println(bd1);
