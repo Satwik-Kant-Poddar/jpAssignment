@@ -87,6 +87,8 @@ public class BigDecimalLogic {
                 System.out.print(str.substring(deciPos));
                 ans += str.substring(deciPos);
             }
+        }else{
+            ans="0";
         }
         return ans;
     }
