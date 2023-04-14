@@ -11,11 +11,6 @@ public class BigDecimalTest {
     @Autowired
     BigDecimal bigDecimal;
 
-//      --> 
-//  --> -1,234.50
-//  -> 0.345
-//  -> 11234.502,345,678.0923
-// 234.50 --> 234.50
     @Test
     public void  test1(){
         String expOutput="1,234.50";

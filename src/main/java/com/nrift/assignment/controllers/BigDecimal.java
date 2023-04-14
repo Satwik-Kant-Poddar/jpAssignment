@@ -24,7 +24,6 @@ public class BigDecimal {
 
   @PostMapping("/bigdecimal")
   public String function1(@RequestBody  String a) {
-
     String ans=bigDecimalLogic.function(a);
     return ans;
   }
